@@ -1,0 +1,33 @@
+{"purchased": [
+    {
+        "totalPurchasedTime": 39,
+        "productID": 98675623,
+        "price": 128.94,
+        "name": "Eye Color Quad Eye Shadow",
+        "rating": 4.5,
+        "ingredients": [
+            "Mica",
+            "Synthetic Fluorphlogopite"
+        ],
+        "stockQuantity": 92,
+        "type": "makeup",
+        "brand": "Tom Ford"
+    },
+    {
+        "totalPurchasedTime": 13,
+        "productID": 98264735,
+        "price": 98.99,
+        "name": "Facial Treatment Cleanser",
+        "rating": 3.9,
+        "ingredients": [
+            "Water",
+            "Sodium Lauroyl Glutamate",
+            "Propylene Glycol",
+            "PEG-150 Stearate",
+            "Galactomyces Ferment Filtrate"
+        ],
+        "stockQuantity": 1,
+        "type": "skincare",
+        "brand": "SKII"
+    }
+]}

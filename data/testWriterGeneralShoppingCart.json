@@ -1,0 +1,24 @@
+{"shopping cart": [
+    {
+        "totalPurchasedTime": 0,
+        "productID": 0,
+        "price": 46,
+        "name": "p1",
+        "rating": 0,
+        "ingredients": [],
+        "stockQuantity": 0,
+        "type": "makeup",
+        "brand": "n1"
+    },
+    {
+        "totalPurchasedTime": 0,
+        "productID": 0,
+        "price": 0,
+        "name": "p2",
+        "rating": 0,
+        "ingredients": [],
+        "stockQuantity": 0,
+        "type": "skincare",
+        "brand": "n2"
+    }
+]}
