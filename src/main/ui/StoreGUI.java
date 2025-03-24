@@ -373,6 +373,9 @@ public class StoreGUI {
     private void loadProgress() {
         try {
             shoppingCart = jsonReaderSC.readSC();
+            for (int i =0; i< shoppingCart.getTotalItem(); i++) {
+                System.out.println(shoppingCart.getShoppingCart().get(i).getName());
+            }
             System.out.println("Loaded Online store");
         } catch (IOException e) {
             System.out.println("Unable to read from file");
@@ -390,5 +393,4 @@ public class StoreGUI {
             System.out.println("Unable to write to file");
         }
     }
-
 }

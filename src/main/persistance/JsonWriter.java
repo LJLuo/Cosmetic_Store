@@ -34,7 +34,9 @@ public class JsonWriter {
     // EFFECTS: writes JSON representation of shopping cart to file
     public void writeSC(ShoppingCart sc) {
         JSONObject json = sc.toJson();
+        System.out.println(json.toString(4));
         saveToFile(json.toString(TAB));
+
     }
 
     // MODIFIES: this
@@ -54,6 +56,7 @@ public class JsonWriter {
     // EFFECTS: writes string to file
     private void saveToFile(String json) {
         writer.print(json);
+        writer.close();
     }
 
 }

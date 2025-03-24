@@ -86,11 +86,17 @@ public class ShoppingCart implements Writable {
     @Override
     public JSONObject toJson() {
         JSONObject json = new JSONObject();
-        json.put("shopping cart", productToJson());
+        JSONArray jssc = new JSONArray();
+
+        for (Product product: shoppingCart) {
+            jssc.put(product.toJson());
+        }
+
+        json.put("shopping cart", jssc);
         return json;
     }
 
-    // EFFECTS: returns things in shopping cart as a JSON array
+    /* // EFFECTS: returns things in shopping cart as a JSON array
     private JSONArray productToJson() {
         JSONArray jsa = new JSONArray();
 
@@ -99,6 +105,6 @@ public class ShoppingCart implements Writable {
         }
 
         return jsa;
-    }
+    } */
 
 }

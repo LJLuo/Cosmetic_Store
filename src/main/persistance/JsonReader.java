@@ -33,6 +33,7 @@ public class JsonReader {
     // throws IOException if an error occurs reading data from file
     public ShoppingCart readSC() throws IOException {
         String jsonData = readFile(source);
+        System.out.println("Read JSON from file: " + jsonData);
         JSONObject jso = new JSONObject(jsonData);
         return parseShoppingCart(jso);
     }
@@ -60,9 +61,15 @@ public class JsonReader {
     // EFFECTS: parses products from JSON object and adds them to
     // shopping cart
     private void addProductsSC(ShoppingCart sc, JSONObject jso) {
+        if (!jso.has("shopping cart")) {  // Prevent errors if key is missing
+            System.out.println("Error: 'shopping cart' key not found in JSON!");
+            return;
+        }
+
         JSONArray jsa = jso.getJSONArray("shopping cart");
         for (Object json : jsa) {
             JSONObject nextProduct = (JSONObject) json;
+            System.out.println("Adding product: " + nextProduct.toString());
             addProductSC(sc, nextProduct);
         }
     }
