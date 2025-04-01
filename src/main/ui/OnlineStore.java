@@ -135,6 +135,12 @@ public class OnlineStore {
         }
     }
 
+    git init
+git remote add origin url-to-repo
+git add .
+git commit -m “comment to this commit”
+git push/pull -u origin main
+
     // MODIFIES: this
     // EFFECTS: determine the name and brand of the product user is interested in
     public void whichProduct(String type) {

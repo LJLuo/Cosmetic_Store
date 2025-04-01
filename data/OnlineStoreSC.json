@@ -1,35 +1,17 @@
-{"shopping cart": [
-    {
-        "totalPurchasedTime": 12,
-        "productID": 98264735,
-        "price": 98.99,
-        "name": "Facial Treatment Cleanser",
-        "rating": 3.9,
-        "ingredients": [
-            "Water",
-            "Sodium Lauroyl Glutamate",
-            "Propylene Glycol",
-            "PEG-150 Stearate",
-            "Galactomyces Ferment Filtrate"
-        ],
-        "stockQuantity": 2,
-        "type": "skincare",
-        "brand": "SKII"
-    },
-    {
-        "totalPurchasedTime": 0,
-        "productID": 78367485,
-        "price": 15,
-        "name": "Hyaluronic Acid 2% + B5 Hydrating Serum",
-        "rating": 2.7,
-        "ingredients": [
-            "Water",
-            "Sodium Hyaluronate",
-            "Propanediol",
-            "Pentylene Glycol"
-        ],
-        "stockQuantity": 23,
-        "type": "skincare",
-        "brand": "The Ordinary"
-    }
-]}
+{"shopping cart": [{
+    "totalPurchasedTime": 12,
+    "productID": 98264735,
+    "price": 98.99,
+    "name": "Facial Treatment Cleanser",
+    "rating": 3.9,
+    "ingredients": [
+        "Water",
+        "Sodium Lauroyl Glutamate",
+        "Propylene Glycol",
+        "PEG-150 Stearate",
+        "Galactomyces Ferment Filtrate"
+    ],
+    "stockQuantity": 2,
+    "type": "skincare",
+    "brand": "SKII"
+}]}

@@ -16,6 +16,63 @@ public class SkinCare implements Product {
     private int totalPurchasedTime;
     private int productID;
 
+    
+
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        long temp;
+        temp = Double.doubleToLongBits(price);
+        result = prime * result + (int) (temp ^ (temp >>> 32));
+        result = prime * result + ((name == null) ? 0 : name.hashCode());
+        result = prime * result + ((brand == null) ? 0 : brand.hashCode());
+        temp = Double.doubleToLongBits(rating);
+        result = prime * result + (int) (temp ^ (temp >>> 32));
+        result = prime * result + ((ingredients == null) ? 0 : ingredients.hashCode());
+        result = prime * result + stockQuantity;
+        result = prime * result + totalPurchasedTime;
+        result = prime * result + productID;
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        SkinCare other = (SkinCare) obj;
+        if (Double.doubleToLongBits(price) != Double.doubleToLongBits(other.price))
+            return false;
+        if (name == null) {
+            if (other.name != null)
+                return false;
+        } else if (!name.equals(other.name))
+            return false;
+        if (brand == null) {
+            if (other.brand != null)
+                return false;
+        } else if (!brand.equals(other.brand))
+            return false;
+        if (Double.doubleToLongBits(rating) != Double.doubleToLongBits(other.rating))
+            return false;
+        if (ingredients == null) {
+            if (other.ingredients != null)
+                return false;
+        } else if (!ingredients.equals(other.ingredients))
+            return false;
+        if (stockQuantity != other.stockQuantity)
+            return false;
+        if (totalPurchasedTime != other.totalPurchasedTime)
+            return false;
+        if (productID != other.productID)
+            return false;
+        return true;
+    }
+
     // EFFECTS: create new SkinCare Object, which implements the Product interface,
     // with name and brand
     // price, stock quantity, product ID, totalPurchasedTime and rating should be

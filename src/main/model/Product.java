@@ -9,6 +9,14 @@ import persistance.Writable;
 //Interface for all products sold in store, with sub-classes MakeUp and SkinCare
 public interface Product extends Writable {
 
+    @Override
+    boolean equals(Object o);
+    
+
+    @Override
+    int hashCode();
+
+
     // EFFECTS: return price of product.
     double getPrice();
 
