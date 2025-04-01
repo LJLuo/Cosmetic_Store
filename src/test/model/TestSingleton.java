@@ -7,6 +7,8 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import java.util.ArrayList;
+
 import org.junit.jupiter.api.BeforeEach;
 
 // Test for Singleton Class
@@ -37,9 +39,31 @@ public class TestSingleton {
     @Test
     void testAddProduct() {
         Product tfEyeShadow = new MakeUp("Eye Color Quad Eye Shadow", "Tom Ford");
+        ArrayList<String> tfEyeShadowI = new ArrayList<>();
+        tfEyeShadowI.add("Mica");
+        tfEyeShadowI.add("Synthetic Fluorphlogopite");
+        tfEyeShadow.setTotalPurchasedTime(38);
+        tfEyeShadow.setIngredients(tfEyeShadowI);
+        tfEyeShadow.setPrice(128.94);
+        tfEyeShadow.setStockQuantity(93);
+        tfEyeShadow.setProductID(98675623);
+        tfEyeShadow.setRating(4.5);
         assertFalse(catologue1.addProduct(tfEyeShadow));
 
         Product diorCleanser = new SkinCare("Dior Cleanser", "Dior");
+        ArrayList<String> diorCleanserI = new ArrayList<>();
+        diorCleanserI.add("Water");
+        diorCleanserI.add("Sodium Lauroyl Glutamate");
+        diorCleanserI.add("Propylene Glycol");
+        diorCleanserI.add("PEG-150 Stearate");
+        diorCleanserI.add("Galactomyces Ferment Filtrate");
+        diorCleanser.setTotalPurchasedTime(12);
+        diorCleanser.setIngredients(diorCleanserI);
+        diorCleanser.setPrice(98.99);
+        diorCleanser.setStockQuantity(2);
+        diorCleanser.setProductID(98264735);
+        diorCleanser.setRating(3.9);
+
         assertTrue(catologue1.addProduct(diorCleanser));
     }
 

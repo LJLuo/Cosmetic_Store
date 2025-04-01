@@ -16,8 +16,7 @@ public class Catologue {
     // EFFECTS: add product to catologue
     public boolean addProduct(Product p) {
         for (Product product : products) {
-            if ((p.getName().equalsIgnoreCase(product.getName())) && (p.getBrand().equalsIgnoreCase(product.getBrand()))
-                    && (p.getType().equalsIgnoreCase(product.getType()))) {
+            if (p.equals(product)) {
                 return false;
             }
         }

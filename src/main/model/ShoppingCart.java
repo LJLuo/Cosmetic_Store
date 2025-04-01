@@ -95,16 +95,4 @@ public class ShoppingCart implements Writable {
         json.put("shopping cart", jssc);
         return json;
     }
-
-    /* // EFFECTS: returns things in shopping cart as a JSON array
-    private JSONArray productToJson() {
-        JSONArray jsa = new JSONArray();
-
-        for (Product p : shoppingCart) {
-            jsa.put(p.toJson());
-        }
-
-        return jsa;
-    } */
-
 }
